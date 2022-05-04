@@ -5,7 +5,7 @@ second parameter.
 THE ANSWER IS :
 """
 lst = [1, 2, 3, 4, 5, 6]
-num = 6
+num = 2
 
 
 def print_big_enough(lst, num):
