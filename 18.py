@@ -10,3 +10,23 @@ As examples,
 • next_number([]) would return 1
 THE ANSWER IS :
 """
+lst = [5, 3, 1]
+
+
+def next_number(lst):
+    mymax = 0
+    num = 0
+    for i in lst:
+        if i > mymax:
+            mymax = i
+
+    for i in range(1, mymax + 1):
+        if i not in lst:
+            return i
+
+    return mymax + 1
+
+
+print(next_number(lst))
+
+
