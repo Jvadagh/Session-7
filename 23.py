@@ -6,9 +6,9 @@ the string "X". If "O" appears in a winning Tic-Tac-Toe pattern, the function sh
 "O". If no winning pattern exists, the function should return the string " ".
 """
 
-game = [['x', 'O', 'O'],
-        ['x', 'O', 'O'],
-        ['x', 'O', 'O']]
+game = [['x', 'o', 'o'],
+        ['x', 'o', 'o'],
+        ['x', 'o', 'o']]
 
 #for row in game:
     #print(row)
@@ -43,6 +43,35 @@ def check_winner(game):
         return result
     if game[0][2] == game[1][1] and game[1][1] == game[2][0] and game[0][2] == game[2][0] and game[0][2] == 'x':
         result = 'x'
+        return result
+        # satr
+    if game[0][0] == game[0][1] and game[0][0] == game[0][2] and game[0][1] == game[0][2] and game[0][0] == 'o':
+        result = 'o'
+        return result
+    if game[1][0] == game[1][1] and game[1][0] == game[1][2] and game[1][1] == game[1][2] and game[1][0] == 'o':
+        result = 'o'
+        return result
+    if game[2][0] == game[2][1] and game[2][0] == game[2][2] and game[2][1] == game[0][2] and game[2][0] == 'o':
+        result = 'o'
+        return result
+        # soton
+    if game[0][0] == game[1][0] and game[1][0] == game[2][0] and game[0][0] == game[2][0] and game[0][0] == 'o':
+        result = 'o'
+        return result
+
+    if game[0][1] == game[1][1] and game[1][1] == game[2][1] and game[0][1] == game[2][1] and game[0][1] == 'o':
+        result = 'o'
+        return result
+
+    if game[0][2] == game[1][2] and game[1][2] == game[2][2] and game[0][2] == game[2][2] and game[0][2] == 'o':
+        result = 'o'
+        return result
+        # ghotr
+    if game[0][0] == game[1][1] and game[1][1] == game[2][2] and game[0][0] == game[2][2] and game[0][0] == 'o':
+        result = 'o'
+        return result
+    if game[0][2] == game[1][1] and game[1][1] == game[2][0] and game[0][2] == game[2][0] and game[0][2] == 'o':
+        result = 'o'
         return result
     else:
         result = ' '
